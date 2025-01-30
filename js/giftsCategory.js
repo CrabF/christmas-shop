@@ -2,7 +2,7 @@ let gifts = [];
 //Получаем данные из json файла и кладем в переменную
 async function getData() {
   try {
-    const res = await fetch("../gifts.json");
+    const res = await fetch("./gifts.json");
     if (!res.ok) {
       throw new Error("Ошибка при получении данных");
     }
