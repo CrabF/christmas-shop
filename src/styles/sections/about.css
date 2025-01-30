@@ -1,0 +1,94 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4646;
+  background-image: url("../../images/AboutSection/snow.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 648px;
+  padding: 0 8px;
+}
+.about__container {
+  background-color: #ffffff;
+  min-height: 528px;
+  width: 1276px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about__container-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 426px;
+  height: 328px;
+  margin: 0 60px;
+}
+.about__container-info-caption {
+  color: #ff4646;
+  font-family: "Allura";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+.about__container-info-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36.48px;
+  letter-spacing: 0.16em;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.about__container-info-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.68px;
+  margin-top: 20px;
+}
+.about__container-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.about__container-image-container {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 528px;
+  max-width: 638px;
+  width: 100%;
+  min-width: 376px;
+}
+
+@media screen and (max-width: 800px) {
+  .about__container-image {
+    transform: scale(1.14);
+  }
+}
+@media screen and (max-width: 770px) {
+  .about__container {
+    flex-direction: column;
+  }
+  .about__container-image-container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    padding-top: 60px;
+  }
+  .about__container {
+    height: 880px;
+    width: 100%;
+  }
+  .about__container-info {
+    margin: 12px 20px;
+  }
+  .about__container-image-container {
+    min-width: 100%;
+  }
+}

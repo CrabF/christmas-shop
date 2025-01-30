@@ -1,0 +1,11 @@
+@import url("../fonts/fonts.css");
+@import url("./sections/header.css");
+@import url("./common/common.css");
+@import url("./sections/hero.css");
+@import url('./sections/about.css');
+@import url('./sections/slider.css');
+@import url('./sections/bestGifts.css');
+@import url('./sections/cta.css');
+@import url('./sections/footer.css');
+@import url('./sections/gifts.css');
+@import url('./sections/modal.css');

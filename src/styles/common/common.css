@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  scroll-behavior: smooth;
+}
+.main {
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+}
+.main_hidden {
+  overflow: hidden;
+}
+.scrollBtn {
+  width: 56px;
+  height: 56px;
+  position: fixed;
+  bottom: 8px;
+  right: 8px;
+  border-radius: 100px;
+  border: 1px #ff4646 solid;
+  background-color: #ffffff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.scrollBtn_show {
+  display: flex;
+}

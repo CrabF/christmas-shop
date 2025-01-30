@@ -1,0 +1,98 @@
+.cta {
+  min-height: 668px;
+  background-color: #ff4646;
+  border-radius: 0 0 20px 20px;
+  background-image: url("../../images/CtaSection/snow.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/CtaSection/forest.png");
+  background-size: cover;
+  background-position: center;
+}
+.cta__container {
+  width: 426px;
+  height: 428px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cta__container-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36.48px;
+  letter-spacing: 0.16em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.cta__container-info {
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cta__container-info-caption {
+  font-family: "Allura";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.cta__container-timer {
+  list-style-type: none;
+  height: 72px;
+  width: 344px;
+  border-radius: 20px;
+  background-color: #ffffff66;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+.cta__container-timer-block {
+  width: 80px;
+  height: 52px;
+}
+.cta__container-timer-block-number {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36.48px;
+  letter-spacing: 0.16em;
+  text-align: center;
+  color: #ffffff;
+}
+.cta__container-timer-block-unit {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cta__container-timer-separator {
+  height: 20px;
+  border-left: 0.5px #ffffff66 solid;
+}
+@media screen and (max-width: 600px) {
+  .cta {
+    height: 704px;
+  }
+}

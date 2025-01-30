@@ -1,0 +1,97 @@
+.gifts-section {
+  min-height: 1394px;
+  background-color: #ff4646;
+  border-radius: 20px;
+  position: relative;
+}
+.gifts-section-background {
+  height: 200px;
+  width: 100%;
+  background-image: url("../../images/PageGifts/garland.png");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.gifts-section-container {
+  max-width: 1276px;
+  min-height: 1274px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.gifts-section-container-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.18em;
+  text-align: center;
+  width: 426px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.gifts-section-container-tabs {
+  list-style-type: none;
+  height: 40px;
+  gap: 8px;
+  display: flex;
+}
+.gifts-section-container-tab {
+  padding: 12px 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+.gifts-section-container-tab_active {
+  background-color: #ffffff33;
+  border-radius: 12px;
+  cursor: initial;
+  pointer-events: none;
+}
+.gifts-section-container-tab:hover {
+  background-color: #ffffff33;
+  border-radius: 12px;
+}
+.gifts-section-container-cards {
+  justify-content: center;
+  max-width: 1276px;
+  min-height: 1050px;
+  gap: 12px 12px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1300px) {
+  .gifts-section-container {
+    padding: 60px 8px 60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gifts-section-background {
+    height: 108px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gifts-section-background {
+    height: 53px;
+  }
+  .gifts-section-container-title {
+    width: calc(100% - 5px);
+  }
+  .gifts-section-container-tab {
+    padding: 12px 8px;
+  }
+  .gifts-section-container-tabs {
+    gap: 0;
+  }
+}

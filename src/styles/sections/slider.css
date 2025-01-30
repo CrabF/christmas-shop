@@ -1,0 +1,122 @@
+.slider {
+  min-height: 488px;
+  background-color: #ff4646;
+  background-image: url("../../images/SliderSection/snow.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.slider__container {
+  max-width: 1276px;
+  width: 100%;
+  height: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__container-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.slider__container-heading-subtitle {
+  font-family: "Allura";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.slider__container-heading-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36.48px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.slider__container-row {
+  height: 200px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: transform 1s ease;
+}
+.slider__container-row-slide {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.slider__container-row-slide:last-of-type {
+  margin-right: 0;
+  padding-right: 8px;
+}
+
+.slider__container-row-slide-text {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 97.52px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.slider__container-row-slide-image {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 20px;
+}
+.slider__container-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.slider__container-buttons-button {
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.slider__container-buttons-button:first-of-type {
+  margin-right: 20px;
+}
+.slider__container-buttons-button:disabled {
+  border-color: #ffffff66;
+  cursor: initial;
+}
+.slider__container-buttons-button:hover:enabled {
+  background-color: #ffffff;
+}
+.slider__container-buttons-button:hover:enabled svg path {
+  stroke: #ff4646;
+}
+.slider__container-buttons-button-arrow_left {
+  transform: scale(-1, 1);
+}
+
+@media screen and (max-width: 1439px) {
+  .slider__container-buttons-button:last-of-type {
+    margin-right: 8px;
+  }
+  .slider__container-row {
+    padding-left: 8px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slider {
+    padding-top: 120px;
+  }
+}
