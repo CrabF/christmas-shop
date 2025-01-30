@@ -79,17 +79,17 @@ function appendCards(sortedGifts) {
 
     switch (sortedGifts[i].category) {
       case "For Work":
-        img.src = "../images/GiftsSection/ball.png";
+        img.src = "./images/GiftsSection/ball.png";
         subtitle.textContent = "For Work";
         subtitle.classList.add("gifts__container-card-subtitle_purple");
         break;
       case "For Harmony":
-        img.src = "../images/GiftsSection/ball3.png";
+        img.src = "./images/GiftsSection/ball3.png";
         subtitle.textContent = "For Harmony";
         subtitle.classList.add("gifts__container-card-subtitle_pink");
         break;
       case "For Health":
-        img.src = "../images/GiftsSection/ball2.png";
+        img.src = "./images/GiftsSection/ball2.png";
         subtitle.textContent = "For Health";
         subtitle.classList.add("gifts__container-card-subtitle_green");
         break;

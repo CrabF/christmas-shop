@@ -6,7 +6,7 @@ const randomGifts = [];
 //Получаем данные из json файла и кладем в переменную
 async function getData() {
   try {
-    const res = await fetch("../gifts.json");
+    const res = await fetch("./gifts.json");
     if (!res.ok) {
       throw new Error("Ошибка при получении данных");
     }
@@ -46,15 +46,15 @@ function setRandomGifts(gifts) {
       title.textContent = gifts[counter].name;
       switch (gifts[counter].category) {
         case "For Work":
-          img.src = "../images/GiftsSection/ball.png";
+          img.src = "./images/GiftsSection/ball.png";
           subtitle.classList.add("gifts__container-card-subtitle_purple");
           break;
         case "For Harmony":
-          img.src = "../images/GiftsSection/ball3.png";
+          img.src = "./images/GiftsSection/ball3.png";
           subtitle.classList.add("gifts__container-card-subtitle_pink");
           break;
         case "For Health":
-          img.src = "../images/GiftsSection/ball2.png";
+          img.src = "./images/GiftsSection/ball2.png";
           subtitle.classList.add("gifts__container-card-subtitle_green");
           break;
       }

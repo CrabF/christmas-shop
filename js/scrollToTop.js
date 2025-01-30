@@ -4,7 +4,7 @@ const scrollBtn = document.createElement("div");
 scrollBtn.classList.add("scrollBtn");
 
 const img = document.createElement("img");
-img.src = "../images/PageGifts/arrowUp.svg";
+img.src = "./images/PageGifts/arrowUp.svg";
 img.alt = "";
 
 scrollBtn.appendChild(img);

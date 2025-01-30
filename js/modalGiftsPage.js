@@ -50,15 +50,15 @@ function setModalInfo(modal, info) {
 
   switch (info[0].category) {
     case "For Work":
-      img.src = "../images/GiftsSection/ball.png";
+      img.src = "./images/GiftsSection/ball.png";
       subtitle.classList.add("gifts__container-card-subtitle_purple");
       break;
     case "For Harmony":
-      img.src = "../images/GiftsSection/ball3.png";
+      img.src = "./images/GiftsSection/ball3.png";
       subtitle.classList.add("gifts__container-card-subtitle_pink");
       break;
     case "For Health":
-      img.src = "../images/GiftsSection/ball2.png";
+      img.src = "./images/GiftsSection/ball2.png";
       subtitle.classList.add("gifts__container-card-subtitle_green");
       break;
   }

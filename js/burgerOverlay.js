@@ -26,7 +26,7 @@ function hideOverlay() {
   //Просто опасити накидывается и потом снимается для анимации смены картинки бургера
   burgerButton.classList.add("header__container-image_hide");
   setTimeout(() => {
-    burgerButton.src = "../images/Header/Burger.svg";
+    burgerButton.src = "./images/Header/Burger.svg";
     burgerButton.classList.remove("header__container-image_hide");
   }, 300);
 }
@@ -37,7 +37,7 @@ function showOverlay() {
   //Просто опасити накидывается и потом снимается для анимации смены картинки бургера
   burgerButton.classList.add("header__container-image_hide");
   setTimeout(() => {
-    burgerButton.src = "../images/Header/BurgerChrest.svg";
+    burgerButton.src = "./images/Header/BurgerChrest.svg";
     burgerButton.classList.remove("header__container-image_hide");
   }, 300);
 }
